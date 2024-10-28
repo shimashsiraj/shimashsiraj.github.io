@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shimash Siraj - Projects</title>
     <!-- link for bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="project.css">
+    <!-- link for fontawesome icons -->
+    <script src="https://kit.fontawesome.com/8676274d1e.js" crossorigin="anonymous"></script>
 </head>
 <style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
     
     .navbar-title{
         font-size: 1.5em;
-        font-weight: bold;
+        text-decoration: none;
         color: #fff;
     }
 
@@ -31,15 +35,63 @@
         border: 2px solid rgb(80, 160, 230);
         border-radius: 10px;
     }
-    .container h3, h6{
-        font-family: Arial, Helvetica, sans-serif;
+    
+
+    h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border-bottom: 2px solid #fff;
+        display: inline-block;
     }
 
     .no-background{
         background: none;
         display: flex;
-        
+        border: 1px solid #000;
         align-self: center;
+    }
+
+    .main{
+        height: 480px;
+    }
+
+    .main img{
+        width: 720px;
+    }
+
+    .card-content{
+        color: #fff;
+    }
+
+    .card-item .logo-alt{
+        font-size: 1.2em;
+        color: #000000;
+    }
+    .card-item i{
+        font-size: 1.5em;
+        margin: 10px;
+    }
+    .card-item .about{
+        font-size: 1.2em;
+    }
+
+    .card-item .git{
+        font-size: 1.2em;
+    }
+
+    .card-item .git a{
+        text-decoration: none;
+        color: #c1e3f0;
+    }
+
+    @media (max-width: 1068px) {
+        .main img {
+            width: 580px;
+        }
+    }
+    @media (max-width: 968px) {
+        .main img {
+            width: 420px;
+        }
     }
 </style>
 
@@ -48,21 +100,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <a href="#" class="navbar-title text-white">my Portfolio</a>
+                    <a href="index.html" class="navbar-title text-white">My Portfolio</a>
                 </div>
                 <div class="col-6">
                     <ul class="nav justify-content-end">
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white">Home</a>
+                            <a href="index.html" class="nav-link text-white">Home</a>
                         </li>
                         <li class="nav-item">
                             <a href="project.html" class="nav-link text-white"><u>Projects</u></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white">About</a>
+                            <a href="about.html" class="nav-link text-white">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white">Contact</a>
+                            <a href="contact.html" class="nav-link text-white">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -73,97 +125,127 @@
     
     <div class="container mt-4">
 
-        <h3>Projects</h3>
+        <h2 class="text-light">Projects</h2>
 
-        <div class="row">
-            <div class="card col-8 m-2">
+        <div class="row justify-content-center">
+            <div class="main card col-8 m-2">
                 <div class="card-body">
                     <h3 class="card-title">Map Application</h3>
-                    <h6>Using HTML, CSS, Bootstrap and JavaScript</h6>
-                    <img src="/assets/map.png" class="w-75" alt="" srcset="">
+                    <img src="./assets/map.png" alt="map application">
                 </div>
             </div>
 
             <div class="card col-3 m-2 no-background">
                 <div class="card-body text-center">
-                    <h1 class="card-title">2020-2021</h1>
+                    <h1 class="card-content">Oct 2024</h1>
+                    <div class="card-item">
+                        
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="logo-alt">Technologies used</span><br>
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-js"></i>
+                                <i class="fa-brands fa-bootstrap"></i>
+                            </div>
+                        </div>
+                        
+
+                        <p class="about mt-2">
+                            About: This is a map application that is designed as a guide for a tourist in Toronto.
+                        </p>
+
+                        <p class="git">Github Source: <a href="https://github.com/shimashsiraj/mapApplication">Map Application</a></p>
+                    </div>
+
                 </div>
             </div>
         </div>
         <br>
-        <div class="row">
-            <div class="card col-8 m-2">
+        <div class="row justify-content-center">
+            <div class="main card col-8 m-2">
                 <div class="card-body">
                     <h3 class="card-title">Bean There - Wordpress Site</h3>
-                    <h6>Built using wordress with the plugins</h6>
-                    <img src="/assets/wordpress.png" class="w-75" alt="" srcset="">
+                    <img src="./assets/wordpress.png" alt="wordpress site">
                 </div>
             </div>
 
-            <div class="card col-3 m-2">
-                <div class="card-body">
-                    <h1 class="card-title">2020-2021</h1>
+            <div class="card col-3 m-2 no-background">
+                <div class="card-body text-center">
+                    <h1 class="card-content">Sep 2024</h1>
+                    <div class="card-item">
+                        
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="logo-alt">Technologies used</span><br>
+                                <i class="fa-brands fa-wordpress"></i>
+                                <i class="fa-brands fa-html5"></i>
+                                <br>
+                                <span class="logo-alt">Plugins used</span><br>
+                                <i class="fa-solid fa-map-location-dot"></i>
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <i class="fa-brands fa-wpforms"></i>
+                            </div>
+                        </div>
+                        
+
+                        <p class="about mt-2">
+                            About: A client project that is designed for a coffee shop in Hamilton.
+                        </p>
+                    </div>
+
                 </div>
             </div>
+
         </div>
+
         <br>
-        <div class="row">
-            <div class="card col-8 m-2">
+
+        <div class="row justify-content-center">
+            <div class="main card col-8 m-2">
                 <div class="card-body">
                     <h3 class="card-title">Hair Salon System</h3>
-                    <h6>Using C# .net framework</h6>
-                    <img src="/assets/hairSalonSystem.jpg" class="w-75" alt="" srcset="">
+                    <img src="./assets/hairSalonSystem.jpg" alt="salon system">
                 </div>
             </div>
 
-            <div class="card col-3 m-2">
-                <div class="card-body">
-                    <h1 class="card-title">2020-2021</h1>
+            <div class="card col-3 m-2 no-background">
+                <div class="card-body text-center">
+                    <h1 class="card-content">Aug 2023</h1>
+                    <div class="card-item">
+                        
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="logo-alt">Technologies used</span><br>
+                                <i class="fa-solid fa-c">#</i>
+                            </div>
+                        </div>
+                        
+
+                        <p class="about mt-2">
+                            About: A simple Hair Salon Price Calculator System to calculate the price of the services.
+                        </p>
+
+                        <p class="git">Github Source: <a href="https://github.com/shimashsiraj/Hair-Salon-System">Salon System</a></p>
+                    </div>
+
                 </div>
             </div>
+
         </div>
-        <br>
-        <div class="row">
-            <div class="card col-8 m-2">
-                <div class="card-body">
-                    <h1 class="card-title">Map Application</h1>
-                    <img src="/assets/map.png" class="w-75" alt="" srcset="">
-                </div>
-            </div>
-
-            <div class="card col-3 m-2">
-                <div class="card-body">
-                    <h1 class="card-title">2020-2021</h1>
-                </div>
-            </div>
-        </div>
-
-        
+                
     </div>
     
 
     
-    <footer class="bg-dark">
+    <footer class="bg-dark mt-4">
         <div class="container">
             <div class="row">
-                <div class="col-6">
-                    <p class="text-light">2024 copyrights reserved &copy;</p>
+                <div class="col-6 p-2">
+                    <p class="text-light">2024 All copyrights reserved &copy;</p>
                 </div>
-                <div class="col-6">
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-white">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="project.html" class="nav-link text-white">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-white">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-white">Contact</a>
-                        </li>
-                    </ul>
+                <div class="col-6 p-2 text-end">
+                    <p class="text-light">Designed by <a href="https://www.linkedin.com/in/mohamed-shimash/" class="text-light">Shimash Siraj</a></p>
                 </div>
             </div>
         </div>
